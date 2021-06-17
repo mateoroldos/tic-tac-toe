@@ -1,0 +1,184 @@
+/* GLOBAL STYLES */
+
+body {
+  font-family: 'Rubik', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0 0 0 0;
+  background: linear-gradient(0deg, #191b1fe0, #191b1fec), url(https://images.unsplash.com/photo-1568826069038-f3de1448e9a1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=577&q=80);
+  background-size:cover;
+}
+
+h1, h2, h3, h4 {
+  color: #74DDA9;
+  margin-bottom: 40px;
+}
+
+button {
+  background-color: #74DDA9;
+  border-style: none;
+  padding: 0.5em 1em;
+  border-radius: 0.4em;
+  font-weight: 500;
+  font-size: 17px;
+}
+
+label {
+  color: rgb(172, 172, 172);
+}
+
+.label-main {
+  color: #74dda9ad;
+}
+
+input {
+  background-color: #26282e;
+  border: solid;
+  border-width: 0.5px;
+  border-color: rgb(126, 126, 126);
+  border-radius: 0.5em;
+  padding: 0.6em;
+  color: rgb(126, 126, 126);
+  font-size: 16px;
+}
+
+input:focus {
+  outline: none;
+  border: solid;
+  border-width: 0.5px;
+  border-color: #74DDA9;
+  border-radius: 0.5em;
+}
+
+::placeholder {
+  color: rgb(126, 126, 126);
+}
+
+/* GLOBAL MARGINS */
+
+.margin-l {
+  margin-bottom: 2em;
+}
+
+.margin-s {
+  margin-bottom: 0.8em;
+}
+
+.margin-xs {
+  margin-bottom: 0.5em;
+}
+
+/* BOARD STYLES */
+
+#board {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  background-color: #17181C;
+  column-gap: 1.5em;
+  row-gap: 1.5em;
+  padding: 1.5em;
+  width: auto;
+  height: auto;
+  box-shadow:
+  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  0 12.5px 10px rgba(0, 0, 0, 0.06),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  0 100px 80px rgba(0, 0, 0, 0.12);
+  border-radius: 1em;
+  margin-bottom: 3em;
+}
+
+.spot-div {
+  background-color: #26282e;
+  width: 100px;
+  height: 100px;
+  border-radius: 0.3em;
+  border: solid;
+  border-width: 1px;
+  border-color: rgb(126, 126, 126);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.spot-key {
+  color: #74DDA9;
+  font-size: 34px;
+}
+
+/* MODAL STYLES */
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100vw; /* Full width */
+    height: 100vh; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #17181C;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 3.5em;
+    width: 80%; /* Could be more or less, depending on screen size */
+    border-radius: 1em;
+    border: solid;
+    border-color: #74DDA9;
+    border-width: 1px;
+  }
+
+  .modal-text {
+    color: white;
+    font-size: 35px;
+    text-align: center;
+  }
+
+  #start-game-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2em;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #74DDA9;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  #form-btn-div {
+    margin-top: 2em;
+  }
+
+  .player-name-div {
+    display: flex;
+    flex-direction: column;
+    min-width: 200px;
+    max-width: 300px;
+  }
+
+  .player-type-div {
+    display: flex;
+    flex-direction: column;
+  }

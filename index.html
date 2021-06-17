@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <h1>Tic-Tac-Toe</h1>
+
+    <div id="board"></div>
+
+    <button id="play-again-btn">Play Again</button>
+
+    <!-- WELCOME MODAL -->
+    <div id="welcomeFormModal" class="modal">
+
+        <!-- Modal content -->
+        <div id="start-game-modal-content" class="modal-content">
+
+            <form id="start-game-form" class="form-container">
+
+                <!-- First player form -->
+                <div>
+                    <h2>Player 1</h2>
+                
+                    <div class="player-name-div margin-l">
+                        <label class="label-main margin-s" for="playerOneName"><b>Player Name</b></label>
+                        <input type="text" placeholder="Name" name="playerOneName" id="player-one-name" required>
+                    </div>
+                    
+                </div>
+
+                <!-- Second player form -->
+                <div>
+                    <h2>Player 2</h2>
+                
+                    <div class="player-name-div margin-l">
+                        <label class="label-main margin-s" for="playerTwoName"><b>Player Name</b></label>
+                        <input type="text" placeholder="Name" name="playerTwoName" id="player-one-name" required>
+                    </div>
+
+                </div>
+
+                <!-- Start game button -->
+                <div id="form-btn-div">
+                  <button id="start-game" type="submit" class="btn">Start Game</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- END GAM MODAL -->
+    <div id="endGameModal" class="modal">
+
+        <!-- Modal content -->
+        <div id="end-game-modal-content" class="modal-content">
+            <div class="modal-content-div"></div>
+            <span class="close">&times;</span>
+        </div>
+              
+    </div>
+
+</body>
+
+<script src="scripts.js"></script>
+
+</html>
